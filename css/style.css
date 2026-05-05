@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2b214d; /* Cor roxa escura do fundo */
+    background-image: linear-gradient(rgba(43, 33, 77, 0.9), rgba(43, 33, 77, 0.9)), url('../images/backgroundHome.png');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif; /* Use uma fonte pixelada se tiver */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header e Logo */
+.header {
+    margin-bottom: 40px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 120px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.header h1 {
+    font-family: bungee;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #000;
+    color: #94d6eb;
+}
+
+/* Grid de Fases */
+.grid-fases {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 25px;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.caps{
+    text-decoration: none;
+    color: white;
+    font-family: bungee;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.imagem-caps {
+    width: 100%;
+    max-width:fit-content;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.2s
+}
+
+.imagem-caps:hover {
+    transform: scale(1.05);
+}
+
+/* Rodapé / Cassete */
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.cassette-icon {
+    width: 110px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s
+}
+
+.cassette-icon img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cassette-icon:hover {
+    transform: scale(1.05);
+}
+
+/* Responsividade para Celular */
+@media (max-width: 600px) {
+    .grid-fases {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas no celular */
+    }
+}
