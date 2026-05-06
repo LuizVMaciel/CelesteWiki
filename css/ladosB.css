@@ -51,7 +51,7 @@ body {
 
 .grid-caps {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 3.25vw 3.3vh;
     justify-items: center;
     align-items: center;
@@ -71,7 +71,7 @@ body {
 
 .imagem-caps {
     width: 100%;
-    max-width:fit-content;
+    max-width: fit-content;
     height: 80%;
     cursor: pointer;
     transition: transform 0.2s
@@ -84,17 +84,16 @@ body {
 .footer {
     display: flex;
     justify-content: center;
+    gap: 20%;
 }
 
 .cassette-icone {
-    width: 13vw;
-    height: 9%;
+    width: 7%;
+    height: 11%;
     cursor: pointer;
     justify-content: center;
     align-items: center;
     transition: transform 0.2s;
-    max-width: 140px;
-    max-height: 90px;
 }
 
 .cassette-icone img {
@@ -132,7 +131,9 @@ body {
     }
 
     .cassette-icone {
-        min-width: 100px;
-        min-height: 50px;
+        min-width: 60px;
+        min-height: 10px;
+        max-width: 60px;
+        max-height: 10px;
     }
 }

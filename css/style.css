@@ -56,11 +56,18 @@ body {
     gap: 3.25vw 3.3vh;
     justify-items: center;
     align-items: center;
+    margin-bottom: 3.3vh;
+}
+.ultimos-caps {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10%; 
     margin-bottom: 5.3vh;
 }
 
 .caps{
-    width: 14vw;
+    width: 15vw;
     height: 16.05vh;
     text-decoration: none;
     color: white;
@@ -68,6 +75,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items:center;
+    justify-content: center;
 }
 
 .imagem-caps {
@@ -88,8 +96,8 @@ body {
 }
 
 .cassette-icone {
-    width: 13vw;
-    height: 9%;
+    width: 9.5%;
+    height: 5.5%;
     cursor: pointer;
     justify-content: center;
     align-items: center;
@@ -121,19 +129,25 @@ body {
     }
     .grid-caps {
         grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        margin-bottom: 25px;
     }
 
     .caps{
         width: 100%;
     }
 
-    .grid-caps {
-        gap: 25px;
-        margin-bottom: 40px;
+    .cassette-icone {
+        min-width: 75px;
+        min-height: 25px;
     }
 
-    .cassette-icone {
-        min-width: 100px;
-        min-height: 50px;
+    .ultimos-caps {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 40px;
     }
 }
