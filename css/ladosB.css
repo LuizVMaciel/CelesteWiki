@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(43, 33, 77, 0.9)), url('../images/backgroundHome.png');
+    background-image: linear-gradient(rgba(80, 27, 27, 0.9)), url('../images/backgroundHome.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -46,7 +46,7 @@ body {
 
 .grid-fases {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     justify-items: center;
     margin-bottom: 40px;
