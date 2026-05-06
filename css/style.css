@@ -17,12 +17,15 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 900px;
     text-align: center;
     padding: 20px;
 }
 
 .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35.46vw;
     margin-bottom: 40px;
     display: inline-flex;
     align-items: center;
@@ -30,29 +33,35 @@ body {
 }
 
 .logo {
-    width: 120px;
+    min-width: 185px;
+    min-height: 150px;
+    max-width: 300px;
+    width: 45%;
     display: block;
-    margin: 0 auto 10px;
+    margin: 0 0 10px;
 }
 
 .header h1 {
     font-family: bungee;
-    font-size: 3rem;
+    font-size: 3.5rem;
     letter-spacing: 2px;
     text-shadow: 2px 2px #000;
     color: #94d6eb;
     cursor: default;
 }
 
-.grid-fases {
+.grid-caps {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    gap: 3.25vw 3.3vh;
     justify-items: center;
-    margin-bottom: 40px;
+    align-items: center;
+    margin-bottom: 5.3vh;
 }
 
 .caps{
+    width: 14vw;
+    height: 16.05vh;
     text-decoration: none;
     color: white;
     font-family: bungee;
@@ -64,7 +73,7 @@ body {
 .imagem-caps {
     width: 100%;
     max-width:fit-content;
-    height: 100px;
+    height: 80%;
     cursor: pointer;
     transition: transform 0.2s
 }
@@ -78,25 +87,46 @@ body {
     justify-content: center;
 }
 
-.cassette-icon {
-    width: 110px;
+.cassette-icone {
+    width: 13vw;
+    height: 9%;
     cursor: pointer;
     justify-content: center;
     align-items: center;
-    transition: transform 0.2s
+    transition: transform 0.2s;
+    max-width: 140px;
+    max-height: 90px;
 }
 
-.cassette-icon img {
+.cassette-icone img {
     width: 100%;
+    height: 100%;
     border-radius: 10px;
 }
 
-.cassette-icon:hover {
+.cassette-icone:hover {
     transform: scale(1.05);
 }
 
 @media (max-width: 600px) {
-    .grid-fases {
+    .header {
+        max-width: 272px;
+        max-height: 167px;
+    }
+    .logo {
+        min-width: 120px;
+        max-width: 120px;
+    }
+    .grid-caps {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .caps{
+        width: 100%;
+    }
+
+    .grid-caps {
+        gap: 25px;
+        margin-bottom: 40px;
     }
 }
